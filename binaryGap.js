@@ -1,29 +1,22 @@
 
 function solution(N) {
-    var maxGap = 0;
-    var currentGap = 0;
-    var binaryN = N.toString(2);
-    var posIndex = binaryN.length;
-    var maxIndex = posIndex - 1;
+    let maxGap = 0;
+    let currentGap = 0;
+    let binaryN = N.toString(2); //Convert number to binary string
+    let len = binaryN.length; // Length of Binary string
+    let posOne = binaryN.lastIndexOf('1'); // First occurrence of 1 from the right
     
-    for(var i = posIndex-1; i >= 0; i--){
+    for(var i = posOne; i > 0; i--){
         
-        if(binaryN.charAt(maxIndex) == '0'){
-            currentGap = 0;
-            maxGap = currentGap;
+        if(binaryN.charAt(i) == '1'){
+            currentGap = 0; // reset gap counter to zero
         }else{
-            if(binaryN.charAt(i) == '0'){
             currentGap = currentGap + 1;
-            
-            if( currentGap > maxGap){
+            if(currentGap > maxGap){
                 maxGap = currentGap;
             }
-            
-            }else{
-                currentGap = 0;
-            }
-        }
+        }      
         
-        
-    }return maxGap;
+    }
+    return maxGap;
 }
