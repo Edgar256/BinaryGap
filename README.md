@@ -17,4 +17,4 @@ Write an efficient algorithm for the following assumptions:
 
 N is an integer within the range [1..2,147,483,647].
 
-![Testing report](image.png)
+![Testing report](image.PNG)
