@@ -1,0 +1,28 @@
+{
+  "name": "binary_gap",
+  "version": "1.0.0",
+  "description": "finding the longest binanry gap in a number N",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edgar256/BinaryGap.git"
+  },
+  "keywords": [
+    "binary",
+    "gap"
+  ],
+  "author": "Edgar Tinkamanyire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Edgar256/BinaryGap/issues"
+  },
+  "homepage": "https://github.com/Edgar256/BinaryGap#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "jest-cli": "^26.0.1"
+  }
+}
